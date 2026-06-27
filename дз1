@@ -1,0 +1,34 @@
+# x = int(input("Enter a number: "))
+# y = int(input("Enter a number: "))
+# z = int(input("Enter a number: "))
+# match x:
+#     case x if x < (y + z) and y < (z + x) and z < (x + y):
+#         print("yes")
+#     case x if x == z and x == y:
+#         print("yes")
+#     case x if x > (y + z):
+#         print("no")
+#     case x if y > (z + x):
+#         print("no")
+#     case y if z > (x + y):
+#         print("no")
+
+
+# x = int(input("Введите число: "))
+# match x:
+#     case x if x > 0:
+#         y = 2 * x + 5
+#         print(y)
+#     case x if x == 0:
+#         y = x
+#         print(y)
+#     case x if x < 0:
+#         y = x ** 2 - 1
+#         print(y)
+
+
+x = int(input("Введите трехзначное число: "))
+match x:
+    case x if x % 2 == 0:
+        print(x)
+    case x if x % 2 != 0:
