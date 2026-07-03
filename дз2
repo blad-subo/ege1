@@ -1,0 +1,29 @@
+#Выведите на экран все числа от 0 до 10 включительно
+# counter = 0
+# while counter <= 10:
+#     print(counter)
+#     counter += 1
+
+# Выведите на экран все нечётные числа от 1 до 19 включительно
+# counter = 1
+# while counter <= 19:
+#     print(counter)
+#     counter += 2
+
+# Выведите на экран все числа от 20 до 10 в обратном порядке
+# counter = 20
+# while counter >= 10:
+#     print(counter)
+#     counter -= 1
+
+# С помощью цикла while выведите на экран 5 строк,
+# каждая из которых состоит из слова "Python"
+# counter = 1
+# while counter <= 5:
+#     print("Python")
+#     counter += 1
+
+# Пользователь вводит целое число. Выведите количество его разрядов (цифр)
+# num = int(input("Enter a number: "))
+# len_s = len(str(num))
+# print(len_s)
