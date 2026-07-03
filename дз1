@@ -27,8 +27,11 @@
 #         print(y)
 
 
-x = int(input("Введите трехзначное число: "))
-match x:
-    case x if x % 2 == 0:
-        print(x)
-    case x if x % 2 != 0:
+# x = int(input("Введите трехзначное число: "))
+# first = x % 10
+# second = (x // 10) % 10
+# third = (x // 100) % 10
+# if first and second or second and third or third and first // 5 or 2 == 0:
+#     print(x)
+# else:
+#     print(x+1)
