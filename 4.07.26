@@ -1,1 +1,53 @@
+from collections import Counter
+from operator import countOf  #пользователь вводит целое число. Найдите сумму всех его цифр
+ #abs - модуль
 
+# a = abs(int(input()))
+# k = 0
+# while a:
+#    k += a % 10
+#    a = a // 10
+# print(k)
+
+
+# a = input()
+# counter = 0
+# summ = 0
+# while counter < len(a):
+#     summ += int(a[counter])
+#     counter += 1
+# print(summ)
+
+#пользователь вводит число n. Выведите все его делители.
+# n = int(input())
+# counter = 0
+# while counter < n:
+#     counter += 1
+#     if n % counter == 0:
+#         print(counter)
+
+
+#выведите квадраты чисел от 1 до 10. Если квадрат больше 50, остановите цикл.
+#Если цикл завершился полностью, выведите : все квадраты меньше 50.
+
+# counter = 0
+# while counter < 10:
+#     square = counter ** 2
+#     if square > 50:
+#         break
+#     print(square)
+#     counter += 1
+# if square > 50:
+#     print("все квадраты меньше 50")
+
+n = int(input())
+if n > 1:
+    j = 0
+    flag = False
+    while n - 1 > j:
+        j += 1
+        if n % j == 0:
+            print("def")
+            break
+else:
+    print("defoult")
