@@ -1,0 +1,75 @@
+
+#итерируемый - list tuple str dict set
+
+#for элемент in последовательность:
+#    тело цикла
+
+# s = [1,2,3,4,5,6,7,8,9,10]
+# d = "hello"
+# for element in d:
+#     print(element)
+
+# start-начало последовательность,
+# stop-конец последовательности (не включительно)
+# step-интервал между элементами последовательности
+# s = range(start, stop, step)
+
+
+# s = list(range(1,100,1))
+# for i in s:
+#     print(i)
+
+# for i in range(100):
+#     print(i)
+
+# s = 'hello world'
+# for i in range(5):
+#     print(s[i])
+
+# for i in range(10,1,-2):
+#     print(i)
+
+# for i in range(1,3):
+#     print("значение внешнего цикла", i)
+#     for j in range(1,3):
+#         print("значение внутреннего цикла", j)
+#     print()
+
+
+
+# for i in range(1,5):
+#     for j in range(1,5):
+#         print(i,"*",j,"=",i*j)
+#     print()
+
+
+# for i in range(1,6):
+#     j = 0
+#     while j < 10:
+#         j += 1
+#         print(i,"*",j,"=",i*j)
+#     print()
+
+
+# отрисовать фигуру с помощью вложеных циклов
+
+# for i in range(5, 0, -1):
+#     print("*" * i)
+
+# for i in range(5,0,-1):
+#     s = ""
+#     for j in range(i):
+#         s += "*"
+#     print(s)
+
+
+n = 5
+for i in range(n):
+    for j in range((2 - i + 1)):
+        print(" ", end="")
+    for j in range(2 * i + 1):
+        print("#", end="")
+    print()
+
+#(2 - i + 1)
+#(2 * i + 1)
