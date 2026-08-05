@@ -1,0 +1,132 @@
+#общие методы
+#len()
+#min() - max()
+#sum()
+#in - принадлежность к интерируемому обьекту
+
+# a = min(object)
+# my_strintg = "hello world"
+# print(len(my_strintg), my_strintg.__len__())
+
+
+#
+# my_string = "Hello world"
+# print(my_string.index("w", 2, 9)) #возвращает индекс первого вхождения элемента
+
+# + - конкатенация
+# world = "world"
+# hello = "hello"
+# print(hello + world)
+
+
+
+
+# best = 100000
+# for m in range(1,100):
+#     for n in range(1,100):
+#         s = "1" * n + '2' * m
+#         while "12" in s or "111" in s or "222" in s:
+#             if "12" in s:
+#                 s = s.replace("12", "3", 1)
+#             elif "111" in s:
+#                 s = s.replace("111", "2", 1)
+#             else:
+#                 s = s.replace("222", "1", 1)
+#         if sum(map(int, s)) == 20:
+#             best = (n+m)
+#             break
+# print(best)
+
+
+# s = input()
+# res = ""
+# i = 0
+# while i < len(s):
+#     if s[i].isalpha():
+#         a = s[i]
+#         num = ""
+#         i += 1
+#     while i < len(s) and s[i].isdigit():
+#         num += s[i]
+#         i += 1
+#     if num:
+#         res += a * int(num)
+#     else:
+#         res += a * 1
+# print(res)
+
+# num = [0,"s",[],{}]
+# print(num)
+# num[0]
+
+# print(num[1:]) # срезы
+
+
+# s = [1,2,3,4,5]
+# for i in range(len(s)):
+#     s[i] += 1
+# print(s)
+
+
+#len() - возвращает колво элементов
+#in / not in - оператор принадлежности
+# + - конкатенация
+#
+# s = "hello" + "123"
+# s = [1,2,3] + [1,2,3]
+# print(s)
+
+#index(element) - индекс element
+# my_list = [1,2,3,4,5,6]
+# print(my_list.index(1))
+
+# my_list.append({}) #добавляет элемент в конец списка
+# my_list.extend([1])
+# # my_list += [[1,2,3]]
+# print(my_list)
+
+# s = []
+# s1 = [1,2,3,4]
+# # s.extend(s1)
+# # print(s)
+#
+# for i in s1:
+#     s.append(s1[i])
+#     print(s1)
+
+
+# my_list.insert(2,"tri")
+#
+# print(my_list)
+#
+
+
+# my_list = [1,2,3,4,5,6]
+# my_list.remove(1) удаляет по значению
+# my_list.pop(2) удаляет по индексу
+#my_list.clear()
+
+# print(my_list.count("element"))
+#my_list = my_list[::-1]
+# my_list.reverse()
+# my_list = ["beta", "gamma", "delta", "epsilon"]
+# my_list.sort(reverse=True)
+
+#min() max() sum()
+
+# nums = [1, -2, 3, -4, 5, -6, 7, -8, 9]
+# pos = 0
+# neg = 0
+# # print(my_list)
+# for i in nums:
+#     if i > 0:
+#         pos += 1
+#     elif i < 0:
+#         neg += 1
+# print(pos, neg)
+
+
+# s = []
+# for i in range(5):
+#     text = input("Enter text: ")
+#     s.append(text)
