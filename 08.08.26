@@ -1,0 +1,88 @@
+#####333333333333333333333333#########
+# spots = [1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1]
+#
+# free_pl = 0
+# start_from = 0
+# cur_len = 0
+# cur_start = 0
+#
+# for i in range(len(spots)):
+#     if spots[i] == 0:
+#         if cur_len == 0:
+#             start_from = i
+#         cur_len += 1
+#         if cur_len > free_pl:
+#             start_from = cur_start
+#             free_pl += cur_len
+#
+#     else:
+#         cur_len = 0
+# print(free_pl, start_from + 1)
+
+
+# for i in range(len(spots)):
+#     if spots[i] == 0:
+#         free_pl2 = 1
+#         for j in range(i + 1, len(spots)):
+#             if spots[j] != 0:
+#                 break
+#             free_pl2 += 1
+#             if free_pl2 > free_pl:
+#                 free_pl = free_pl2
+#                 start_from = i + 1
+# print(start_from, free_pl)
+
+
+
+# Рейтинг автомата хранится по убыванию:
+# rating = [9800, 9500, 8700, 8100, 7600].
+# Игрок набрал 8900. Вставьте результат на
+# правильную позицию (без сортировки — она
+# пересортирует всё, а нужно лишь найти место)
+# и объявите игроку его место.
+
+
+# you_rait = 8900
+# rating = [9800, 9500, 8700, 8100, 7600]
+# for i in range(len(rating)):
+#     if rating[i] > you_rait:
+#         result = i
+#         break
+# raiting.in sert(result, 8900)
+# print(result)
+
+# a = tuple([10, {}, 3])
+# b = (1, [2, 3, 4], 5)
+# # c = (*b, *a)
+# s, (s1, * s3), s2 = b
+#
+# print(s,s1,s2,s3)
+
+
+# b = [(1,2), (3,4)]
+# for i, j in b:
+#     print(i + j)
+
+# nested_list = [ ([1,2], 3), ['XY' ,6]]
+# for (i, i1), j in nested_list:
+#     print(i,i1, j)
+
+# t = (10, 20, 30, 40)
+# s1, *s2 = t
+# print(s1)
+# print(s2)
+
+
+
+# a = tuple(map(int, input().split()))
+# print(a)
+# a = a[::-1]
+# last, *rest = a
+# print(last, rest)
+
+
+# a, b = (1,2), (3,4)
+# c = []
+# for i in range(len(a)):
+#     c.apped(a[i] + b[i])
+# print(tuple(c))
