@@ -1,0 +1,27 @@
+#22222222222222222222222222222222222222222222222222222222222
+# prices = [270, 265, 280, 242, 268, 275, 290, 285]
+# for i in range(len(prices)):
+#     if prices[i] < prices[i+1]:
+#         print(prices[i],prices[i+1])
+
+
+#33333333333333333333333333333333333333333333333
+# scores = [85, 92, 85, 100, 78]
+# max_score = max(scores)
+# for i in range(len(scores)):
+#     if max(scores) == scores[i]:
+#         print("1"scores[i])
+
+count = 0
+max_f = 0
+spots = [1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 1]
+for i in range(len(spots)-1):
+    if spots[i+1] == 0:
+        count += 1
+    else:
+        if count > max_f:
+            max_f = count
+        count = 0
+if count > max_f:
+    max_f = count
+print(max_f, spots[i])
